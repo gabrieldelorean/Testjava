@@ -70,6 +70,9 @@ public class form_api_steps {
 	
 	@Dado("^o endereço da APi para cadastro$")
 	public void o_endereço_da_APi_para_cadastro() throws Throwable {
+
+              //remover lógica das step definitions 
+              // criar uma classe e instanciar as funções dentro da step definitions é uma boa prática 
 		 RestAssured.baseURI = "http://localhost:8080";
 	        path = "/pessoas";  	   
 	}
